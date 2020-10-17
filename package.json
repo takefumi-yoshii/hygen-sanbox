@@ -1,0 +1,24 @@
+{
+  "name": "hygen-sanbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "hygen": "^6.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "new:fc": "hygen new fc",
+    "new:sfc": "hygen new sfc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takefumi-yoshii/hygen-sanbox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/takefumi-yoshii/hygen-sanbox/issues"
+  },
+  "homepage": "https://github.com/takefumi-yoshii/hygen-sanbox#readme"
+}
