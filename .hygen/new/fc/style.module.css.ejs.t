@@ -1,5 +1,5 @@
 ---
-to: <%= abs_path %>/style.module.css
+to: "<%= have_style ? `${abs_path}/style.module.css` : null %>"
 ---
 .module {
   
