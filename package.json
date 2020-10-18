@@ -8,8 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "new:fc": "hygen new fc",
-    "new:sfc": "hygen new sfc"
+    "new:fc": "hygen new fc"
   },
   "repository": {
     "type": "git",
