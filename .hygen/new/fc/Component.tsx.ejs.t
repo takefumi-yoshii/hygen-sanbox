@@ -7,10 +7,10 @@ import { useDeps } from './dependencies'
 // ______________________________________________________
 //
 <% if (have_children) { -%>
-type Props = {
+export type Props = {
 };
 <% } else { -%>
-type Props = {
+export type Props = {
   children?: never;
 };
 <% } -%>
