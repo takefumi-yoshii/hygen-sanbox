@@ -1,5 +1,8 @@
+// 
+// npm run new:sfc -- --tag=p
+// 
 module.exports = {
-  prompt: ({ inquirer }) => {
+  prompt: ({ inquirer, args }) => {
     const questions = [
       {
         type: 'select',
@@ -29,7 +32,8 @@ module.exports = {
         const { category, component_name, dir } = answers
         const path = `${category}/${ dir ? `${dir}/` : `` }${component_name}`
         const abs_path = `src/components/${path}`
-        return { ...answers, path, abs_path }
+        const tag = args.tag ? args.tag : 'div'
+        return { ...answers, path, abs_path, tag }
       })
   }
 }

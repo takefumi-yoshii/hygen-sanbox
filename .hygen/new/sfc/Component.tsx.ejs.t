@@ -16,9 +16,9 @@ type Props = {
 // ______________________________________________________
 //
 export const <%= component_name %>: React.FC<Props> = (props) => (
-  <div className={style.<%= component_name %>}>
+  <<%= tag %> className={style.module}>
 <% if (have_children) { -%>
     {props.children}
 <% } -%>
-  </div>
+  </<%= tag %>>
 );

@@ -3,7 +3,7 @@ to: <%= abs_path %>/<%= component_name %>.tsx
 ---
 import React from "react";
 import style from "./style.module.css"
-import { use<%= component_name %>Deps } from './dependencies'
+import { useDeps } from './dependencies'
 // ______________________________________________________
 //
 <% if (have_children) { -%>
@@ -17,12 +17,12 @@ type Props = {
 // ______________________________________________________
 //
 export const <%= component_name %>: React.FC<Props> = (props) => {
-  const deps = use<%= component_name %>Deps(props)
+  const deps = useDeps(props)
   return (
-    <div className={style.<%= component_name %>}>
+    <<%= tag %> className={style.module}>
 <% if (have_children) { -%>
       {props.children}
 <% } -%>
-    </div>
+    </<%= tag %>>
   );
 }
